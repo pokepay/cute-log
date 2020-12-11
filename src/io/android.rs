@@ -65,7 +65,7 @@ impl Writer {
 
     fn write_text(&mut self, text: &str) {
         //Yeah, how about to not write so much actually?
-        debug_assert!(text.len() < BUFFER_CAPACITY);
+        // debug_assert!(text.len() < BUFFER_CAPACITY);
 
         if self.len + text.len() >= BUFFER_CAPACITY {
             self.flush();
